@@ -21,18 +21,18 @@
 
 ### 1️⃣Prepare Your Environment
 - [link](https://www.datawithbaraa.com/sql-introduction/advanced-sql-thank-you/)
-- 1. #### download & install sql server
+    1. #### download & install sql server
     - Express
     - basic
 
 
-- 2. #### download & install ssms
+    2. #### download & install ssms
 
-
-- 3. #### download & create 3x database
-    1. create Database Engine type with window authentication
-    2. connect to server
-
+    3. #### download & create 3x database
+    ```
+        1. create Database Engine type with window authentication
+        2. connect to server
+    ```
     - project sales db
     - adventure works dwh db
         - dwh: data warehouse --> olab
@@ -64,9 +64,7 @@
 
 <br>
 
-```
 - dbms: that manages databases and stores data
 - sql server: it's a dbms 
 - ssms: sql server management studio
     - graphical interface to interact with sql server
-```
