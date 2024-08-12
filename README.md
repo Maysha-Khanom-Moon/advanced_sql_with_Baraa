@@ -25,23 +25,21 @@
     - Express
     - basic
 
-
     2. #### download & install ssms
 
     3. #### download & create 3x database
-    ```
         1. create Database Engine type with window authentication
         2. connect to server
     ```
-    - project sales db
-    - adventure works dwh db
+    1. project sales db
+    2. adventure works dwh db
         - dwh: data warehouse --> olab
             - data source --> dwh
         - olab: online analytical processing
             - query --> olab(qube) --> dwh
-    - adventure works oltp db
+    3. adventure works oltp db
         - oltp: online transactional  processing
-        <br>
+    ```
 
     - these are bak file
         - backup file used to stores contents of a database
@@ -51,7 +49,7 @@
         - add one by one
 
 
-- 4. #### tour into the interface ssms
+    4. #### tour into the interface ssms
     - object explorer, query editor, result grid
     - caution:
         - make sure to select the correct database
@@ -61,10 +59,53 @@
     <br>
 
     - database --> schema(model) --> a table belongs to a single schema
-
 <br>
 
 - dbms: that manages databases and stores data
 - sql server: it's a dbms 
 - ssms: sql server management studio
     - graphical interface to interact with sql server
+
+
+## 2️⃣Windows Functions
+### Windows Function Basics
+- it's like GROUP BY. but it's advance
+- #### but:
+    - window works row wise
+    - group by works group wise
+    <br>
+    - group by returns single row for each group
+    - window returns a result for each row
+    <br>
+    - group by --> simple aggregations
+    - window --> aggregations + keep details
+    <br>
+    - group by has only agrregate functions
+    - window has aggregate, rank, value functions
+    <br>
+<br>
+
+- don't lose the details of data
+- row-level calculation
+
+- #### windows functions
+    - aggregate:
+        - count(expr)
+        - sum(expr)
+        - avg(expr)
+        - min(expr)
+        - max(expr)
+    <br>
+    - ranking:
+        - row_number()
+        - rank()
+        - dense_rank()
+        - cume_dist()
+        - percent_rank()
+        - ntile(n)
+    <br>
+    - value(analytical):
+        - lead(expr, offset, default)
+        - lag(expr, offset, default)
+        - first_value(expr)
+        - last_value(expr)
