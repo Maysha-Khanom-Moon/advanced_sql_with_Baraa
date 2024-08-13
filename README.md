@@ -13,7 +13,7 @@
 10. AI - ChatGPT & SQL
 11. Analytical Project
 
-#### Why you must master SQL?
+### Why you must master SQL?
 - sql is everywhere, its a relational database
 - sql in all platforms & can use it for any analytical tast
 - sql in high demand
@@ -21,15 +21,15 @@
 
 ### 1️⃣Prepare Your Environment
 - [link](https://www.datawithbaraa.com/sql-introduction/advanced-sql-thank-you/)
-    1. #### download & install sql server
+1. #### download & install sql server
     - Express
     - basic
 
-    2. #### download & install ssms
+2. #### download & install ssms
 
-    3. #### download & create 3x database
-        1. create Database Engine type with window authentication
-        2. connect to server
+3. #### download & create 3x database
+    1. create Database Engine type with window authentication
+    2. connect to server
     ```
     1. project sales db
     2. adventure works dwh db
@@ -49,7 +49,7 @@
         - add one by one
 
 
-    4. #### tour into the interface ssms
+4. #### tour into the interface ssms
     - object explorer, query editor, result grid
     - caution:
         - make sure to select the correct database
@@ -113,11 +113,18 @@
         - last_value(expr)
     <br>
 
-- #### The syntax:
-    - 2 parts: window function + over clause
-    - over clause have 3 parts:
-        1. partition clause
-        2. order caluse
-        3. frame caluse
-        <br>
-    - AVG(Sales) OVER(PARTITION BY Category ORDER BY OrderDate ROWS UNBOUNDED PRECEDING)
+
+### The syntax:
+- 2 parts: window function + over clause
+#### over clasue:
+- 3 parts:
+    1. partition clause
+    2. order caluse
+    3. frame caluse
+- tells sql that the function used is a window function
+- it defines a window or subset of data
+    <br>
+- AVG(Sales) OVER(PARTITION BY Category ORDER BY OrderDate ROWS UNBOUNDED PRECEDING)
+    <br>
+#### partition clause:
+- 
