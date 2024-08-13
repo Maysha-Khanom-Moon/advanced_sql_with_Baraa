@@ -90,7 +90,7 @@
 - don't lose the details of data
 - row-level calculation
 
-- #### windows functions
+- #### windows functions:
     - aggregate:
         - count(expr)
         - sum(expr)
@@ -111,3 +111,13 @@
         - lag(expr, offset, default)
         - first_value(expr)
         - last_value(expr)
+    <br>
+
+- #### The syntax:
+    - 2 parts: window function + over clause
+    - over clause have 3 parts:
+        1. partition clause
+        2. order caluse
+        3. frame caluse
+        <br>
+    - AVG(Sales) OVER(PARTITION BY Category ORDER BY OrderDate ROWS UNBOUNDED PRECEDING)
