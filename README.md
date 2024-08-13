@@ -127,6 +127,7 @@
 - AVG(Sales) OVER(PARTITION BY Category ORDER BY OrderDate ROWS UNBOUNDED PRECEDING)
     <br>
 #### partition clause:
+- optional for any type of function
 - divides the rows into groups, based on the column/s
 
 - without partition:
@@ -138,5 +139,7 @@
 - flexibility of window:
     - allows aggregation of data at different granualarities within the same query
 
-
-
+#### order clause:
+- optional for aggregate function
+- required for rank and value functions
+- sort the data within a window (asc | desc)
