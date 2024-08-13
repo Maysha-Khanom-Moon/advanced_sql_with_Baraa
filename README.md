@@ -134,6 +134,9 @@
 - with partition:
     - divide into groups --> multiple window
 - we can use multiple columns partition
+    <br>
+- flexibility of window:
+    - allows aggregation of data at different granualarities within the same query
 
 
 
