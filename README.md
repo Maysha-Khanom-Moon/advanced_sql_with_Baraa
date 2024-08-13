@@ -127,4 +127,13 @@
 - AVG(Sales) OVER(PARTITION BY Category ORDER BY OrderDate ROWS UNBOUNDED PRECEDING)
     <br>
 #### partition clause:
-- 
+- divides the rows into groups, based on the column/s
+
+- without partition:
+    - calculation done on entier dataset --> single window
+- with partition:
+    - divide into groups --> multiple window
+- we can use multiple columns partition
+
+
+
