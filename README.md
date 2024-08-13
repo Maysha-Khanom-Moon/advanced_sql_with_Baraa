@@ -143,3 +143,4 @@
 - optional for aggregate function
 - required for rank and value functions
 - sort the data within a window (asc | desc)
+    - asc default
