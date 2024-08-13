@@ -83,6 +83,8 @@
     - group by has only agrregate functions
     - window has aggregate, rank, value functions
     <br>
+    - ##### group by rule: all columns in select must be included in group by
+        - ##### here coming the window
 <br>
 
 - don't lose the details of data
