@@ -30,6 +30,9 @@ WHERE ProductID IN(101, 102);
 -- rank customers based on their total sales
 -- as we don't have to show details so we can choose group by
 -- but for group by their is no rank function so we will use window and group by together
+-- steps:
+--     1. build the query using group by
+--     2. then add the window function
 SELECT
     CustomerID,
     SUM(Sales) TotalSales,
