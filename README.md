@@ -176,8 +176,16 @@
     - ROWS BETWEEN 2 PRECEDING AND CURRENT ROW
         - ROWS 2 PRECEDING
     - ##### shortcut only works for preceding
-    - ##### default frame:
-        - order by always uses a hidden frame
+- default frame:
+    - order by always uses a hidden frame
         <br>
-        - ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
-        - ROWS UNBOUNDED PRECEDING
+    - ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+    - ROWS UNBOUNDED PRECEDING
+    <br>
+
+#### 4x rules:
+1. window functions can be used only in SELECT and ORDER BY clauses
+2. nesting window functions is not allowed
+3. sql execute window functions after WHERE clasue
+    - first filtering then aggregation
+4. window function can be used together with GROUP BY in the same query, only if the same columns are used
