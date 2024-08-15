@@ -126,6 +126,7 @@
     <br>
 - AVG(Sales) OVER(PARTITION BY Category ORDER BY OrderDate ROWS UNBOUNDED PRECEDING)
     <br>
+
 #### partition clause:
 - optional for any type of function
 - divides the rows into groups, based on the column/s
@@ -144,3 +145,29 @@
 - required for rank and value functions
 - sort the data within a window (asc | desc)
     - asc default
+
+#### frame clause:
+- window inside a window
+- defines a subset of rows within each window that is relevant for the calculation
+- 2 parts have:
+    - frame types: 
+        - rows
+        - range
+    - frame boundary(lower value):
+        - current row
+            - 0-th row
+        - n preceding
+            - n-th row before the current row
+        - unbounded preceding
+            - from first row
+    - frame boundary(higher value):
+        - current row
+            - 0-th row
+        - n following
+            - upto the n-th row after the current row
+        - unbounded following
+            - upto last row
+        - <br>
+- rules:
+    - frame clasue can only used together with order by clause
+    - lower value must be before the higher value
