@@ -171,3 +171,13 @@
 - rules:
     - frame clasue can only used together with order by clause
     - lower value must be before the higher value
+    - <br>
+- shortcut:
+    - ROWS BETWEEN 2 PRECEDING AND CURRENT ROW
+        - ROWS 2 PRECEDING
+    - ##### shortcut only works for preceding
+    - ##### default frame:
+        - order by always uses a hidden frame
+        <br>
+        - ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+        - ROWS UNBOUNDED PRECEDING
