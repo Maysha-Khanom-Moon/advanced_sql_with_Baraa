@@ -206,6 +206,11 @@
     - ##### use case:
         1. quick summary or snapshot of the entire dataset
         2. group-wise analysis, to understand patterns within different categories
+        <br>
+    - data quality issue:
+        - duplicates leads to inaccuracies in analysis
+        - check the duplicates using primary key which is unique
+        - although in general primary keys are unique but in real life we have do build a function to check duplicate primary keys
 
 
 

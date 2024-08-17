@@ -39,3 +39,13 @@ SELECT
     COUNT(Score) OVER() TotalScores,
     COUNT(Country) OVER() TotalCountries
 FROM Sales.Customers;
+
+
+-- Check whether the table 'OrdersArchive' contain any duplicate rows
+-- 1. find out the primary key then
+SELECT
+    OrderID,
+    COUNT(*) OVER(PARTITION BY OrderID) CheckPK
+FROM Sales.OrdersArchive;
+
+-- if we get any CheckPK value more than 1 then those have duplicates
