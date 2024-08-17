@@ -189,3 +189,41 @@
 3. sql execute window functions after WHERE clasue
     - first filtering then aggregation
 4. window function can be used together with GROUP BY in the same query, only if the same columns are used
+<br>
+
+
+### Aggregate window function:
+- expression is required
+    - <br>
+- #### count(expr):
+    - counts all the rows in a table
+    - count(*):
+        - counts all the rows in a table, regardless of whether any value in NULL
+        - count(1) --> same as count(*)
+    
+    - count(column):
+        - counts the number of non-NULL values in the column
+    - ##### use case:
+        1. quick summary or snapshot of the entire dataset
+        2. group-wise analysis, to understand patterns within different categories
+
+
+
+## 🌟Query Clauses
+```
+SELECT DISTINCT country, COUNT(c.customer_id) AS total_customers
+
+FROM customers AS c
+
+INNER JOIN orders o ON o.cutomer_id = c.cutomer_id
+
+WHERE country = 'germany'
+
+GROUP BY c.country
+
+HAVING COUNT(c.customer_id) > 1
+
+ORDER BY c.country
+
+LIMIT 2
+```
