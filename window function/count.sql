@@ -48,4 +48,15 @@ SELECT
     COUNT(*) OVER(PARTITION BY OrderID) CheckPK
 FROM Sales.OrdersArchive;
 
+
+-- Find the duplicates rows only
 -- if we get any CheckPK value more than 1 then those have duplicates
+SELECT
+    *
+FROM (
+    SELECT
+        OrderID,
+        COUNT(*) OVER(PARTITION BY OrderID) CheckPK
+        FROM Sales.OrdersArchive
+) t WHERE CheckPK > 1
+-- the alias 't' is used in the query to provide a name for the derived table(subquery)
