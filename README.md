@@ -250,6 +250,23 @@
     - it's a problem
     <br>
 
+#### running & rolling total:
+- analysis over time:
+     they aggregate sequence of members, and the aggregation is updated each time a new memeber is added
+- ##### use case:
+    - tracking:
+        - tracking current sales with target sales
+    - trend analysis:
+        - providing insights into historical patterns
+    <br>
+- ##### running total:
+    - aggregate all values from the beginning up to the current point without dropping off older data
+    - default order by frame
+
+- ##### rolling total:
+    - aggregate all values within a fixed time window(e.g. 30 days). As new data is added, the oldest data point will be dropped
+    - fixed window size
+
 
 ## 🌟Query Clauses
 ```
