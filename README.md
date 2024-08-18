@@ -194,7 +194,10 @@
 
 ### Aggregate window function:
 - expression is required
-    - <br>
+- ##### use case:
+    - overall analysis. quick summary or snapshot of the entire dataset
+    - total per groups. group-wise analysis, to understand patterns within different categories
+    <br>
 #### count(expr):
 - counts all the rows in a table
 - count(*):
@@ -204,8 +207,6 @@
 - count(column):
     - counts the number of non-NULL values in the column
 - ##### use case:
-    - quick summary or snapshot of the entire dataset
-    - group-wise analysis, to understand patterns within different categories
     - identify duplicate rows to improve data quality
         1. overall analysis
         2. category analysis
@@ -221,8 +222,6 @@
 #### sum(expr):
 - numeric expression only
 - ##### use case:
-    - overall analysis. quick summary or snapshot of the entire dataset
-    - total per groups. group-wise analysis to understand patterns within different categories
     - shows the contribution of each data point to the overall dataset
 - ##### comparison use cases:
     - compare the current value and aggregated value of window functions
@@ -239,9 +238,18 @@
         - it can be any specific value
     <br>
 - ##### use case:
-    - overall analysis. quick summary or snapshot of the entire dataset
-    - total per groups. group-wise analysis, to understand patterns within different categories
     - compare to average. helps to evaluate whether a value is above or below the average
+    <br>
+
+#### min(expr) & max(expr):
+- NULL is consider by default as ZERO
+
+- for max:
+    - no problem at all
+- for min:
+    - it's a problem
+    <br>
+
 
 ## 🌟Query Clauses
 ```
