@@ -195,8 +195,17 @@
 ### Aggregate window function:
 - expression is required
 - ##### use case:
-    - overall analysis. quick summary or snapshot of the entire dataset
-    - total per groups. group-wise analysis, to understand patterns within different categories
+    1. overall analysis
+        - quick summary or snapshot of the entire dataset
+    2. total per groups analysis
+        - group-wise analysis, to understand patterns within different categories
+    3. part to whole analysis
+    4. comparison analysis
+    5. identify duplicates
+    6. outlier detection
+    7. running total
+    8. rolling total
+    9. moving average
     <br>
 #### count(expr):
 - counts all the rows in a table
@@ -238,6 +247,7 @@
         - it can be any specific value
     <br>
 - ##### use case:
+    - outlier detection
     - compare to average. helps to evaluate whether a value is above or below the average
     <br>
 
@@ -272,8 +282,17 @@
 - similar to running and rolling total
 - running total: default window
 - rolling total: fixed window
+- <br>
+
+#### summary:
+1. overall total: overview of entire data
+2. total per groups: compare catergories
+3. running total: progress over time
+4. rolling total: progress over time in specific fixed window
 <br>
 
+
+###
 
 
 ## 🌟Query Clauses
