@@ -226,7 +226,22 @@
     - shows the contribution of each data point to the overall dataset
 - ##### comparison use cases:
     - compare the current value and aggregated value of window functions
+- <br>
 
+#### avg(expr):
+- numeric expression only
+- NULLs will ignored
+    <br>
+- sometimes we consider NULL as zero
+    - so first we have to handle the NULL value
+    - AVG(COALESCE(expr, 0))
+        - replace the NULL with 0
+        - it can be any specific value
+    <br>
+- ##### use case:
+    - overall analysis. quick summary or snapshot of the entire dataset
+    - total per groups. group-wise analysis, to understand patterns within different categories
+    - compare to average. helps to evaluate whether a value is above or below the average
 
 ## 🌟Query Clauses
 ```
