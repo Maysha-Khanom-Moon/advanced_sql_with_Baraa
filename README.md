@@ -90,28 +90,28 @@
 - don't lose the details of data
 - row-level calculation
 
-- #### windows functions:
-    - aggregate:
-        - count(expr)
-        - sum(expr)
-        - avg(expr)
-        - min(expr)
-        - max(expr)
+#### windows functions:
+- ##### aggregate:
+    - count(expr)
+    - sum(expr)
+    - avg(expr)
+    - min(expr)
+    - max(expr)
     <br>
-    - ranking:
-        - row_number()
-        - rank()
-        - dense_rank()
-        - cume_dist()
-        - percent_rank()
-        - ntile(n)
+- ##### ranking:
+    - row_number()
+    - rank()
+    - dense_rank()
+    - cume_dist()
+    - percent_rank()
+    - ntile( #####n)
     <br>
-    - value(analytical):
-        - lead(expr, offset, default)
-        - lag(expr, offset, default)
-        - first_value(expr)
-        - last_value(expr)
-    <br>
+- ##### value(analytical):
+    - lead(expr, offset, default)
+    - lag(expr, offset, default)
+    - first_value(expr)
+    - last_value(expr)
+<br>
 
 
 ### The syntax:
@@ -266,6 +266,14 @@
 - ##### rolling total:
     - aggregate all values within a fixed time window(e.g. 30 days). As new data is added, the oldest data point will be dropped
     - fixed window size
+    <br>
+
+#### moving average:
+- similar to running and rolling total
+- running total: default window
+- rolling total: fixed window
+<br>
+
 
 
 ## 🌟Query Clauses
