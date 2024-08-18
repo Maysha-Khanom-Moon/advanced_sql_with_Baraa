@@ -195,23 +195,37 @@
 ### Aggregate window function:
 - expression is required
     - <br>
-- #### count(expr):
-    - counts all the rows in a table
-    - count(*):
-        - counts all the rows in a table, regardless of whether any value in NULL
-        - count(1) --> same as count(*)
+#### count(expr):
+- counts all the rows in a table
+- count(*):
+    - counts all the rows in a table, regardless of whether any value in NULL
+    - count(1) --> same as count(*)
     
-    - count(column):
-        - counts the number of non-NULL values in the column
-    - ##### use case:
-        1. quick summary or snapshot of the entire dataset
-        2. group-wise analysis, to understand patterns within different categories
+- count(column):
+    - counts the number of non-NULL values in the column
+- ##### use case:
+    - quick summary or snapshot of the entire dataset
+    - group-wise analysis, to understand patterns within different categories
+    - identify duplicate rows to improve data quality
+        1. overall analysis
+        2. category analysis
+        3. quality checks: identify NULLs
+        4. quality checks: identify Duplicates
         <br>
-    - data quality issue:
-        - duplicates leads to inaccuracies in analysis
-        - check the duplicates using primary key which is unique
-        - although in general primary keys are unique but in real life we have do build a function to check duplicate primary keys
+- data quality issue:
+    - duplicates leads to inaccuracies in analysis
+    - check the duplicates using primary key which is unique
+    - although in general primary keys are unique but in real life we have do build a function to check duplicate primary keys
+    <br>
 
+#### sum(expr):
+- numeric expression only
+- ##### use case:
+    - overall analysis. quick summary or snapshot of the entire dataset
+    - total per groups. group-wise analysis to understand patterns within different categories
+    - shows the contribution of each data point to the overall dataset
+- ##### comparison use cases:
+    - compare the current value and aggregated value of window functions
 
 
 ## 🌟Query Clauses
