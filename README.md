@@ -314,10 +314,15 @@
     <br>
 
 #### row_number():
-- unique ranking without gaps/skipping
 - assign a unique number to each row
 - it doesn't handle ties
+- unique ranking without gaps/skipping
+    <br>
 
+#### rank():
+- assign a rank to each row
+- it handles ties
+- it leaves gaps in ranking --> for shared rank
 
 
 
