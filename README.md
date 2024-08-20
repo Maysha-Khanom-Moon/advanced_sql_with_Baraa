@@ -1,4 +1,4 @@
-### Special thanks [Data with Baraa](https://www.youtube.com/@DataWithBaraa) And [Playlist](https://www.youtube.com/playlist?list=PLNcg_FV9n7qZY_2eAtUzEUulNjTJREhQe)
+### Special thanks [Data with Baraa](https://www.youtube.com/@DataWithBaraa). And [Playlist](https://www.youtube.com/playlist?list=PLNcg_FV9n7qZY_2eAtUzEUulNjTJREhQe)
 
 ## Advanced SQL Course
 1. Prepare Environment
@@ -104,7 +104,7 @@
     - dense_rank()
     - cume_dist()
     - percent_rank()
-    - ntile( #####n)
+    - ntile(n)
     <br>
 - ##### value(analytical):
     - lead(expr, offset, default)
@@ -293,6 +293,31 @@
 
 
 ### Ranking window function:
+- before using ranking function sort the data
+    - so, order clause required
+    - but frame clause not allowed
+- 2 types of ranking:
+    1. integer-based ranking
+        - discrete distinct value
+        - top/bottom N analysis
+        - functions:
+            - row_number()
+            - rank()
+            - dense_rank()
+            - ntile(n)
+    2. percentage-based ranking
+        - continuous value
+        - distribution analysis
+        - functions:
+            - cume_dist()
+            - percent_rank()
+    <br>
+
+#### row_number():
+- unique ranking without gaps/skipping
+- assign a unique number to each row
+- it doesn't handle ties
+
 
 
 
