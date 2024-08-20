@@ -292,7 +292,8 @@
 <br>
 
 
-###
+### Ranking window function:
+
 
 
 ## 🌟Query Clauses
