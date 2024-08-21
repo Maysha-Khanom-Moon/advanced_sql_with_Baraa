@@ -194,6 +194,8 @@
 
 ### Aggregate window function:
 - expression is required
+- sql does not support nesting window functions directly
+    - add sub-queries
 - ##### use case:
     1. overall analysis
         - quick summary or snapshot of the entire dataset
@@ -335,6 +337,7 @@
 1. top-n analysis
     - analysis the top performers to do targeted marketing
 2. bottom-n analysis
+    - help analysis the underperformance to manage risks and to do optimizations
 3. assign unique ids
 4. identify duplicates
 
