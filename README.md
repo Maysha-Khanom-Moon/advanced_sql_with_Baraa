@@ -296,21 +296,21 @@
 - before using ranking function sort the data
     - so, order clause required
     - but frame clause not allowed
-- 2 types of ranking:
-    1. integer-based ranking
-        - discrete distinct value
-        - top/bottom N analysis
-        - functions:
-            - row_number()
-            - rank()
-            - dense_rank()
-            - ntile(n)
-    2. percentage-based ranking
-        - continuous value
-        - distribution analysis
-        - functions:
-            - cume_dist()
-            - percent_rank()
+#### 2 types of ranking:
+1. integer-based ranking
+    - discrete distinct value
+    - top/bottom N analysis
+    - functions:
+        - row_number()
+        - rank()
+        - dense_rank()
+        - ntile(n)
+2. percentage-based ranking
+    - continuous value
+    - distribution analysis
+    - functions:
+        - cume_dist()
+        - percent_rank()
     <br>
 
 #### row_number():
@@ -323,6 +323,13 @@
 - assign a rank to each row
 - it handles ties
 - it leaves gaps in ranking --> for shared rank
+    <br>
+
+#### dense_rank():
+- assign a rank to each row
+- it handles ties
+- it doesn't leaves gaps in ranking
+    <br>
 
 
 
