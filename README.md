@@ -339,6 +339,9 @@
 2. bottom-n analysis
     - help analysis the underperformance to manage risks and to do optimizations
 3. assign unique ids
+    - help to assign unique identifier for each row to help paginating
+    - ##### paginating:
+        - process of breaking down a large data into smaller, more manageable chunks
 4. identify duplicates
 
 

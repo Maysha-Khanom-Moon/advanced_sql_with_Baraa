@@ -1,6 +1,6 @@
 USE SalesDB
 
--- top-n analysis
+-- # top-n analysis
 -- Find the top highest sales for each product
 SELECT *
 FROM (
@@ -11,9 +11,12 @@ FROM (
         ROW_NUMBER() OVER(PARTITION BY ProductID ORDER BY Sales DESC) RankByProduct
     FROM Sales.Orders
 ) t WHERE RankByProduct = 1;
+-----
 
 
--- bottom-n analysis
+
+-----
+-- # bottom-n analysis
 -- Find the lowest 2 customers based on their total sales
 SELECT * 
 FROM (
@@ -30,3 +33,15 @@ FROM (
 -- group by function also does not allowed nesting directly
 -- but we can use group by and window function together
 -- columns used in GROUP BY and WINDOW function must be the same
+-----
+
+
+
+-----
+-- # generate unique ids
+-- Assign unique ids to the rows of the 'Orders Archive' table
+SELECT
+    ROW_NUMBER() OVER(ORDER BY OrderID, OrderDate) UniqueID,
+	*
+FROM Sales.OrdersArchive
+-----
