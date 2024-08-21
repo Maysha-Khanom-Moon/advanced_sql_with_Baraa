@@ -343,6 +343,7 @@
     - ##### paginating:
         - process of breaking down a large data into smaller, more manageable chunks
 4. identify duplicates
+    - identify and remove duplicate rows to improve data quality
 
 
 
