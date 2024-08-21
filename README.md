@@ -314,22 +314,23 @@
     <br>
 
 #### row_number():
-- assign a unique number to each row
-- it doesn't handle ties
-- unique ranking without gaps/skipping
+- unique rank
+- does not handle ties
+- no gaps in ranks
     <br>
 
 #### rank():
-- assign a rank to each row
-- it handles ties
-- it leaves gaps in ranking --> for shared rank
+- shared rank
+- handles ties
+- gaps in ranks
     <br>
 
 #### dense_rank():
-- assign a rank to each row
-- it handles ties
-- it doesn't leaves gaps in ranking
+- shared rank
+- handles ties
+- no gaps in ranks
     <br>
+
 
 
 
