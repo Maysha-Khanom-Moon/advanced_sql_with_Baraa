@@ -331,6 +331,12 @@
 - no gaps in ranks
     <br>
 
+#### row_number() uses:
+1. top-n analysis
+    - analysis the top performers to do targeted marketing
+2. bottom-n analysis
+3. assign unique ids
+4. identify duplicates
 
 
 
