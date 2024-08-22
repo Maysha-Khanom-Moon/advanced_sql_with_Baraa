@@ -394,6 +394,50 @@
 - ##### 0 <= percent_rank() <= 1
 
 - ##### exclusive --> the current row is excluded
+    <br>
+
+### Value functions **:
+- window analytical functions
+- order clause required
+
+#### time series analysis:
+- the process of analyzing the data to understand patterns, trends, and behaviors over time
+
+1. YoY:
+    - Year-over-Year
+    - Analyze the overall growth or decline of the business's performance over time
+
+2. MoM:
+    - Month-over-Month
+    - Analyze short-term trends and discover patterns in seasonality
+
+#### lead(expr, offset, default):
+- frame clause not allowed
+- access a value from the next row within a window
+
+- ##### arguments:
+    - expression is required
+    - offset --> no of rows forward from current row
+        - default = 1
+    - default value --> return default value if next row is not avaiable
+        - default = null
+
+#### lag(expr, offset, default):
+- frame clause not allowed
+- access a value from the previous row within a window
+
+- ##### arguments:
+    - expression is required
+    - offset --> no of rows previous from current row
+        - default = 1
+    - default value --> return default value if previous row is not avaiable
+        - default = null
+    <br>
+
+#### first_value(expr):
+
+#### last_value(expr):
+- frame clause should be used
 
 
 ## 🌟Query Clauses
