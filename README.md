@@ -370,7 +370,12 @@
         - to balance the processing of extracting data
     <br>
 
-#### 
+#### cume_dist():
+- cumulative distribution calculates the distribution of data points within a window
+
+- cume_dist = position no / no of rows
+- ##### tie rule: the position of the last occurence of the same value
+    <br>
 
 
 ## 🌟Query Clauses
