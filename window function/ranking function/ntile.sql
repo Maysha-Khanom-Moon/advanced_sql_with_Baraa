@@ -26,3 +26,11 @@ FROM (
         NTILE(3) OVER(ORDER BY Sales DESC) Buckets
     FROM Sales.Orders
 ) t
+
+
+-- # equalizing load processing
+-- In order to export the data, divide the orders into 2 groups
+SELECT
+    NTILE(2) OVER(ORDER BY OrderID) Buckets,
+    *
+FROM Sales.Orders

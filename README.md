@@ -359,13 +359,18 @@
     4. ... ...
     <br>
 
-- ##### ntile() use cases:
+- ##### ntile(n) use cases:
     1. data analyst --> data segmentation
         - divides a dataset into distinct subsets based on certain criteria
-        
+
     2. data engineer --> equalizing load processing
+        - use primary key to order
+        - to transfer big data it takes long time. sometimes it shows network error because load stressed the network
+        - so we split the dataset into small tables using ntile(n)
+        - to balance the processing of extracting data
+    <br>
 
-
+#### 
 
 
 ## 🌟Query Clauses
