@@ -399,6 +399,8 @@
 ### Value functions **:
 - window analytical functions
 - order clause required
+- ##### MONTH():
+    - extracts and returns the month from a given date
 
 #### time series analysis:
 - the process of analyzing the data to understand patterns, trends, and behaviors over time
@@ -410,6 +412,7 @@
 2. MoM:
     - Month-over-Month
     - Analyze short-term trends and discover patterns in seasonality
+    <br>
 
 #### lead(expr, offset, default):
 - frame clause not allowed
