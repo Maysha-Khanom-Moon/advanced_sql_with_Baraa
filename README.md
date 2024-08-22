@@ -344,6 +344,19 @@
         - process of breaking down a large data into smaller, more manageable chunks
 4. identify duplicates
     - identify and remove duplicate rows to improve data quality
+    <br>
+
+#### ntile(n):
+- divides the rows into a specified number of approximately equal groups(Buckets)
+- bucket size = no of rows / no of buckets
+    - n = no of buckets
+
+- ##### when bucket size not integer:
+    - say we have m rows
+    1. 1st bucket size, n1 = ceil(m / n)
+    2. 2nd bucket size, n2 = ceil((m-n1) / n)
+    3. 3rd bucket size, n3 = ceil((m-n1-n2) / n)
+    4. ... ...
 
 
 
