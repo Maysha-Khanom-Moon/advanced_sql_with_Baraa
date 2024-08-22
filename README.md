@@ -310,6 +310,7 @@
 2. percentage-based ranking
     - continuous value
     - distribution analysis
+    - calculate percentile
     - functions:
         - cume_dist()
         - percent_rank()
@@ -374,8 +375,25 @@
 - cumulative distribution calculates the distribution of data points within a window
 
 - cume_dist = position no / no of rows
-- ##### tie rule: the position of the last occurence of the same value
+
+- ##### tie rule:
+    - took the position of the last occurrence
+
+- ##### scale: 0 < cume_dist <= 1
+
+- ##### inclusive --> the current row is included
     <br>
+
+#### percent_rank():
+- calculates the relative position of each row
+- percent_rank = (position no - 1) / (no of rows - 1)
+
+- ##### tie rule:
+    - took the position of the first occurrence
+
+- ##### 0 <= percent_rank() <= 1
+
+- ##### exclusive --> the current row is excluded
 
 
 ## 🌟Query Clauses
