@@ -357,6 +357,14 @@
     2. 2nd bucket size, n2 = ceil((m-n1) / n)
     3. 3rd bucket size, n3 = ceil((m-n1-n2) / n)
     4. ... ...
+    <br>
+
+- ##### ntile() use cases:
+    1. data analyst --> data segmentation
+        - divides a dataset into distinct subsets based on certain criteria
+        
+    2. data engineer --> equalizing load processing
+
 
 
 
