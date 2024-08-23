@@ -403,6 +403,8 @@
     - extracts and returns the month from a given date
 - ##### CAST:
     - cast( __ as float)
+- ##### DATEDIFF():
+    - calculates the difference between two date values
 
 #### time series analysis:
 - the process of analyzing the data to understand patterns, trends, and behaviors over time
@@ -414,6 +416,9 @@
 2. MoM:
     - Month-over-Month
     - Analyze short-term trends and discover patterns in seasonality
+
+3. Retention:
+    - measure customer's behavior and loyalty to help businesses build strong relationships with customers
     <br>
 
 #### lead(expr, offset, default):
