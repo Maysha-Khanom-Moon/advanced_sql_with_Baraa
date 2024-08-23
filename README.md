@@ -12,12 +12,12 @@
 9. Views & Temp Tables
 10. AI - ChatGPT & SQL
 11. Analytical Project
-
+    <br>
 ### Why you must master SQL?
 - sql is everywhere, its a relational database
 - sql in all platforms & can use it for any analytical tast
 - sql in high demand
-
+    <br>
 
 ### 1️⃣Prepare Your Environment
 - [link](https://www.datawithbaraa.com/sql-introduction/advanced-sql-thank-you/)
@@ -47,7 +47,7 @@
     - ##### restore database into ssms
         - restore database --> device(...) --> add --> select --> ok --> ok --> okay
         - add one by one
-
+    <br>
 
 4. #### tour into the interface ssms
     - object explorer, query editor, result grid
@@ -59,13 +59,14 @@
     <br>
 
     - database --> schema(model) --> a table belongs to a single schema
-<br>
+    <br>
 
 - dbms: that manages databases and stores data
 - sql server: it's a dbms 
 - ssms: sql server management studio
     - graphical interface to interact with sql server
-
+    <br>
+<br>
 
 ## 2️⃣Windows Functions
 ### Windows Function Basics
@@ -417,7 +418,8 @@
     - Month-over-Month
     - Analyze short-term trends and discover patterns in seasonality
 
-3. Retention:
+#### time gaps analysis:
+3. Customer Retention    
     - measure customer's behavior and loyalty to help businesses build strong relationships with customers
     <br>
 
@@ -451,9 +453,10 @@
 #### last_value(expr):
 - frame clause should be used
 - access a value from the last row within a window
+    <br>
 <br>
 
-###
+##
 
 ## 🌟Query Clauses
 ```
