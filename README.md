@@ -399,8 +399,10 @@
 ### Value functions **:
 - window analytical functions
 - order clause required
-- ##### MONTH():
+- ##### MONTH(date):
     - extracts and returns the month from a given date
+- ##### CAST:
+    - cast( __ as float)
 
 #### time series analysis:
 - the process of analyzing the data to understand patterns, trends, and behaviors over time
