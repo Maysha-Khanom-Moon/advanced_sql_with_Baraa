@@ -445,10 +445,15 @@
     <br>
 
 #### first_value(expr):
+- frame clause should be used
+- access a value from the first row within a window
 
 #### last_value(expr):
 - frame clause should be used
+- access a value from the last row within a window
+<br>
 
+###
 
 ## 🌟Query Clauses
 ```
