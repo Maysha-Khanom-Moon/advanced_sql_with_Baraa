@@ -507,7 +507,14 @@
 - incorrect column selection leads to inaccurate results
     <br>
 
-###
+### Operators:
+#### union:
+- returns all distinct rows from both queries
+- removes duplicate rows from the result
+
+- steps:
+    1. firstly explore both table
+    2. find out the compatible rows and map them
 
 <br>
 
