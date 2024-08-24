@@ -510,11 +510,24 @@
 ### Operators:
 #### union:
 - returns all distinct rows from both queries
-- removes duplicate rows from the result
+- first performs a sorting operation
+- then removes duplicate rows from the result
 
 - steps:
     1. firstly explore both table
     2. find out the compatible rows and map them
+    <br>
+
+#### union all:
+- returns all rows from both queries, inlcuding duplicates
+- union all is generally faster than union
+    - no sorting and elimination
+- use union all to find duplicates and quality issues
+
+- steps:
+    1. firstly explore both table
+    2. find out the compatible rows and map them
+    <br>
 
 <br>
 
