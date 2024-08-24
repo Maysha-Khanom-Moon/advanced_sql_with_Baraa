@@ -69,7 +69,7 @@
 <br>
 
 ## 2️⃣Windows Functions
-### Windows Function Basics
+### Windows function basics:
 - it's like GROUP BY. but it's advance
 - #### but:
     - window works row wise
@@ -456,7 +456,27 @@
     <br>
 <br>
 
-##
+## 3️⃣Sets Operators
+- set operations in sql combine the results of multiple queries into a single result set
+
+- 2 methods:
+    1. to combine columns: JOINs
+        - Key column
+        1. Inner join
+        2. Full join
+        3. Lest join
+        4. Right join
+    2. to combine rows: SET operations
+        - Same columns
+        1. union
+        2. union all
+        3. except(minus)
+        4. intersect
+    
+
+
+<br>
+
 
 ## 🌟Query Clauses
 ```
