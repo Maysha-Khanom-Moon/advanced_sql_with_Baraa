@@ -472,8 +472,42 @@
         2. union all
         3. except(minus)
         4. intersect
-    
+    <br>
 
+### Rules:
+#### 1. sql clauses
+- set operator can be used almost in all clauses 
+    - where
+    - join
+    - group by
+    - having
+
+- but order by is allowed only once at the end of query
+        <br>
+
+#### 2. num of columns
+- the number of columns in each query must be the same
+        <br>
+
+#### 3. data types
+- data types of columns in each qury must be compatible
+        <br>
+
+#### 4. order of columns
+- the order of the columns in each query must be the same
+        <br>
+
+#### 5. column aliases
+- the column names in the result set are determined by the column names specified in the first query
+- 1st query controls column names
+        <br>
+
+#### 6. correct columns
+- even if all rules are met and sql shows no errors, the may be incorrect
+- incorrect column selection leads to inaccurate results
+    <br>
+
+###
 
 <br>
 
