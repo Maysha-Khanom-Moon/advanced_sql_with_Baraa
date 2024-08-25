@@ -508,14 +508,14 @@
     <br>
 
 ### Operators:
+- steps:
+    1. firstly explore both table
+    2. find out the compatible rows and map them
+    <br>
 #### union:
 - returns all distinct rows from both queries
 - first performs a sorting operation
 - then removes duplicate rows from the result
-
-- steps:
-    1. firstly explore both table
-    2. find out the compatible rows and map them
     <br>
 
 #### union all:
@@ -523,10 +523,12 @@
 - union all is generally faster than union
     - no sorting and elimination
 - use union all to find duplicates and quality issues
+    <br>
 
-- steps:
-    1. firstly explore both table
-    2. find out the compatible rows and map them
+#### except: (minus)
+- returns unique rows in 1st table that are not in 2nd table
+- ##### order of queries:
+    - only here the order of queries in a except does affect the result
     <br>
 
 <br>
