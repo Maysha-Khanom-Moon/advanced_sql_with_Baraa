@@ -547,6 +547,12 @@
         - also we saw a clear map
     - ##### source flag:
         - include additional column to indicate the source of each row
+    <br>
+
+2. delta detection:
+- identifying the differences or changes(delta) between two batches of data
+- data engineer use new data generated pipeline
+    - source system -----> data warehouse
 <br>
 
 
