@@ -579,7 +579,13 @@ END
 - without ELSE default is NULL
     <br>
 
-###
+### Use cases:
+#### 1. categorizing data
+- group the data into different categories based on certain conditions
+- main purpose is data transformation
+- derive new information
+    - create new columns based on existing data
+
 
 
 ## 🌟Query Clauses
