@@ -538,6 +538,7 @@
 
 #### use cases:
 1. combine information:
+    - union or union all use case
     - combine similar information before analyzing the data
     - database developers divide the data into multiple tables to optimize performance and archive old data
     
@@ -550,10 +551,35 @@
     <br>
 
 2. delta detection:
+- except use case
 - identifying the differences or changes(delta) between two batches of data
 - data engineer use new data generated pipeline
     - source system -----> data warehouse
+    <br>
+
+3. data completeness check:
+- except use case
+- check both tables are identical or not
+    - A - B = B - A = empty
+- except operator can be used to compare tables to detect discrepancies between databases
+    <br>
 <br>
+
+## 4️⃣Conditional(case) statments
+### The syntax:
+```
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    ...
+    ELSE result
+END
+```
+- top-down approch
+- without ELSE default is NULL
+    <br>
+
+###
 
 
 ## 🌟Query Clauses
