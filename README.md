@@ -527,9 +527,13 @@
 
 #### except: (minus)
 - returns unique rows in 1st table that are not in 2nd table
+
 - ##### order of queries:
     - only here the order of queries in a except does affect the result
     <br>
+
+#### intersect:
+- returns only the rows that are common in both queries
 
 <br>
 
