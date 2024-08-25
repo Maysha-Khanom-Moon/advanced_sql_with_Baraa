@@ -534,7 +534,19 @@
 
 #### intersect:
 - returns only the rows that are common in both queries
+    <br>
 
+#### use cases:
+1. combine information:
+    - combine similar information before analyzing the data
+    - database developers divide the data into multiple tables to optimize performance and archive old data
+    
+    - ##### best practices:
+        - never use an asterisk(*) to combine tables; list needed columns instead
+        - because after combining if a new column is added in any table then it will return error
+        - also we saw a clear map
+    - ##### source flag:
+        - include additional column to indicate the source of each row
 <br>
 
 
