@@ -580,11 +580,16 @@ END
     <br>
 
 ### Use cases:
+#### case rule:
+- case return data type must be compitable
+    <br>
+
 #### 1. categorizing data
 - group the data into different categories based on certain conditions
 - main purpose is data transformation
 - derive new information
     - create new columns based on existing data
+
 
 
 
