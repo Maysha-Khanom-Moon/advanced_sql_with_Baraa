@@ -579,9 +579,22 @@ END
 - without ELSE default is NULL
     <br>
 
+#### quick form syntax:
+- if all conditions for specific one column
+```
+CASE coulmn
+    WHEN _1_ THEN _1_
+    WHEN _2_ THEN _2_
+    ... ...
+    ELSE
+```
+- not need to use the same column name in every statement
+    <br>
+
 ### Use cases:
 #### case rule:
-- case return data type must be compitable
+- but full format is recommended
+- because if you add another column in case statement then you have to rewrite whole statement
     <br>
 
 #### 1. categorizing data:

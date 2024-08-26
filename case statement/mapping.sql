@@ -18,6 +18,8 @@ FROM Sales.Employees;
 SELECT DISTINCT Country
 FROM Sales.Customers;
 
+-- step 2
+-- full format
 SELECT
     CustomerID,
     FirstName,
@@ -26,6 +28,19 @@ SELECT
     CASE
         WHEN Country = 'Germany' THEN 'DE'
         WHEN Country = 'USA' THEN 'US'
-        ELSE 'Not Avaiable'
+        ELSE 'n/a'
+    END CountryAbbr
+FROM Sales.Customers
+
+-- quick form
+SELECT
+    CustomerID,
+    FirstName,
+    LastName,
+    Country,
+    CASE Country
+        WHEN 'Germany' THEN 'DE'
+        WHEN 'USA' THEN 'US'
+        ELSE 'n/a'
     END CountryAbbr
 FROM Sales.Customers
