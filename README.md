@@ -584,12 +584,18 @@ END
 - case return data type must be compitable
     <br>
 
-#### 1. categorizing data
+#### 1. categorizing data:
 - group the data into different categories based on certain conditions
 - main purpose is data transformation
 - derive new information
     - create new columns based on existing data
+    <br>
 
+#### 2. mapping values:
+- transform the values from one form to another
+- to get unique values to map:
+    - select distinct
+    <br>
 
 
 
