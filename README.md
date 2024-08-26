@@ -85,8 +85,8 @@
     - window has aggregate, rank, value functions
     <br>
 ##### group by rule: all columns in select must be included in group by
-##### here coming the window
-<br>
+- here coming the window
+    <br>
 
 - don't lose the details of data
 - row-level calculation
@@ -610,7 +610,7 @@ CASE coulmn
     - select distinct
     <br>
 
-#### 3. handking nulls:
+#### 3. handling nulls:
 - replace nulls with a specific value
 - nulls can lead to inaccurate results, which can lead to wrong decision-making
 
