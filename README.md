@@ -613,6 +613,15 @@ CASE coulmn
 #### 3. handling nulls:
 - replace nulls with a specific value
 - nulls can lead to inaccurate results, which can lead to wrong decision-making
+    <br>
+
+#### 4. condition aggregation:
+- apply aggregate functions only on subsets of data that fulfill certain conditions
+##### flag:
+- binary indicator(1, 0) to be summarized to show how many times the condition is true
+    <br>
+<br>
+
 
 
 ## 🌟Query Clauses
