@@ -624,6 +624,24 @@ CASE coulmn
 <br>
 
 
+## 5️⃣Null Functions
+#### basic:
+- NULL means nothing, unknown!
+- NULL is not equal to anything!
+    - NULL is not zero
+        - zero is a value
+
+    - NULL is not empty string
+        - empty refers to something that has zero length
+
+    - NULL is not blank space
+        - empty string
+
+- NULL means there is no value or missing or I don't know what it is or not defined
+- Like someone's middle name is empty just means he/she doesn't have a name, if middle name is Null, then it means the middle name is missing, could be empty, or "A" or "ABC" or anything
+    <br>
+
+
 
 ## 🌟Query Clauses
 ```
