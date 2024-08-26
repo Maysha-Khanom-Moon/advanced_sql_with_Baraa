@@ -589,12 +589,13 @@ CASE coulmn
     ELSE
 ```
 - not need to use the same column name in every statement
+- but full format is recommended
+- because if you add another column in case statement then you have to rewrite whole statement
     <br>
 
 ### Use cases:
 #### case rule:
-- but full format is recommended
-- because if you add another column in case statement then you have to rewrite whole statement
+- the data type of the result must be compitable(matching)
     <br>
 
 #### 1. categorizing data:
