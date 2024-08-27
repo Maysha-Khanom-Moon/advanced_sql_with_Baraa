@@ -707,6 +707,13 @@ CASE coulmn
         - so coalesce recommended
 
 - if coalesce query is really slow then just use isnull, otherwise coalesce recommended
+    <br>
+
+#### Handle null - data aggregation:
+- for every aggregate function: Nulls ignored
+- just count(*) doesn't ignored null
+    
+But sometimes specially for avg we have to count null as zero
 
 
 
