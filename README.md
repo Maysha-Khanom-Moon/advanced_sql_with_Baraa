@@ -642,28 +642,55 @@ CASE coulmn
     <br>
 
 ### Functions:
-#### for replace values:
+#### for replace values: (function)
 - NULL ---- ISNULL | COALESCE ----> value
 - value ---- NULLIF ----> NULL
     <br>
 
-#### check for null:
+#### check for null: (boolean)
 - NULL --- IS NULL ---> True
 - NULL --- IS NOT NULL ---> False
     <br>
 
 #### ISNULL:
-1. replace null by default value:
+1. replace null by default value: (static)
     - ISNULL(column1, replacement_value)
         - if column1 value is null then replace it with replacement_value
             <br>
 
-2. replace null by another column's value:
+2. replace null by another column's value: (dynamic)
     - ISNULL(column1, column2):
         - if column1 value is null then replace it with another column2's value
             <br>
-        
-    
+    <br>
+
+#### COALESCE
+- as it is like isnull function but we can use multiple values or columns to check
+1. static:
+    - COALESCE(column1, replacement_value)
+        - if column1 value is null then replace it with replacement_value
+            <br>
+
+2. dynamic:
+    - COALESCE(column1, column2):
+        - if column1 value is null then replace it with another column2's value
+            <br>
+
+3. multiple:
+##### it's a nested isnull function
+- COALESCE(column1, column2, ..., value)
+- COALESCE(column1, column2, column3, ...)
+    - if column1 value is null then replace it with column2
+        - if column2 is also null then replace it with column3
+            - if column3 is also null then replace it with column4
+                - ...
+            - else replace by column3
+        - else replace by column2
+    - else replace by column1
+    <br>
+
+#### 
+
 
 
 
