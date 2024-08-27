@@ -641,6 +641,31 @@ CASE coulmn
 - Like someone's middle name is empty just means he/she doesn't have a name, if middle name is Null, then it means the middle name is missing, could be empty, or "A" or "ABC" or anything
     <br>
 
+### Functions:
+#### for replace values:
+- NULL ---- ISNULL | COALESCE ----> value
+- value ---- NULLIF ----> NULL
+    <br>
+
+#### check for null:
+- NULL --- IS NULL ---> True
+- NULL --- IS NOT NULL ---> False
+    <br>
+
+#### ISNULL:
+1. replace null by default value:
+    - ISNULL(column1, replacement_value)
+        - if column1 value is null then replace it with replacement_value
+            <br>
+
+2. replace null by another column's value:
+    - ISNULL(column1, column2):
+        - if column1 value is null then replace it with another column2's value
+            <br>
+        
+    
+
+
 
 
 ## 🌟Query Clauses
