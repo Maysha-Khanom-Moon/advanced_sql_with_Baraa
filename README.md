@@ -709,7 +709,7 @@ CASE coulmn
 - if coalesce query is really slow then just use isnull, otherwise coalesce recommended
     <br>
 
-### Handle null
+### Handle null(use case)
 #### data aggregation:
 - for every aggregate function: Nulls ignored
 - just count(*) doesn't ignored null
@@ -729,7 +729,13 @@ But sometimes specially for avg we have to count null as zero
         - sql don't know + something = don't know
     <br>
 
-#### 
+#### before joining tables:
+- handle the null before joining tables
+- usually we join tables based on some comperison. But Null-Null comperison is not possible
+    - sql will ignore these records
+    - so we lost these records
+    - that's why we have to handle NULLs
+    <br>
 
 
 
