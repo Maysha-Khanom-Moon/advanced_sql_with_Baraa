@@ -69,7 +69,7 @@
 <br>
 
 ## 2️⃣Windows Functions
-### Windows function basics:
+### Windows function basics
 - it's like GROUP BY. but it's advance
 - #### but:
     - window works row wise
@@ -115,7 +115,7 @@
 <br>
 
 
-### The syntax:
+### The syntax
 - 2 parts: window function + over clause
 #### over clasue:
 - 3 parts:
@@ -193,7 +193,7 @@
 <br>
 
 
-### Aggregate window function:
+### Aggregate window function
 - expression is required
 - sql does not support nesting window functions directly
     - add sub-queries
@@ -295,7 +295,7 @@
 <br>
 
 
-### Ranking window function:
+### Ranking window function
 - before using ranking function sort the data
     - so, order clause required
     - but frame clause not allowed
@@ -397,7 +397,7 @@
 - ##### exclusive --> the current row is excluded
     <br>
 
-### Value functions **:
+### Value functions **
 - window analytical functions
 - order clause required
 - ##### MONTH(date):
@@ -474,7 +474,7 @@
         4. intersect
     <br>
 
-### Rules:
+### Rules
 #### 1. sql clauses
 - set operator can be used almost in all clauses 
     - where
@@ -507,7 +507,7 @@
 - incorrect column selection leads to inaccurate results
     <br>
 
-### Operators:
+### Operators
 - steps:
     1. firstly explore both table
     2. find out the compatible rows and map them
@@ -566,7 +566,7 @@
 <br>
 
 ## 4️⃣Conditional(case) statments
-### The syntax:
+### The syntax
 ```
 CASE
     WHEN condition1 THEN result1
@@ -593,7 +593,7 @@ CASE coulmn
 - because if you add another column in case statement then you have to rewrite whole statement
     <br>
 
-### Use cases:
+### Use cases
 #### case rule:
 - the data type of the result must be compitable(matching)
     <br>
@@ -625,7 +625,7 @@ CASE coulmn
 
 
 ## 5️⃣Null Functions
-#### basic:
+#### basic
 - NULL means nothing, unknown!
 - NULL is not equal to anything!
     - NULL is not zero
@@ -641,7 +641,7 @@ CASE coulmn
 - Like someone's middle name is empty just means he/she doesn't have a name, if middle name is Null, then it means the middle name is missing, could be empty, or "A" or "ABC" or anything
     <br>
 
-### Functions:
+### Functions
 #### for replace values: (function)
 - NULL ---- ISNULL | COALESCE ----> value
 - value ---- NULLIF ----> NULL
@@ -709,11 +709,16 @@ CASE coulmn
 - if coalesce query is really slow then just use isnull, otherwise coalesce recommended
     <br>
 
-#### Handle null - data aggregation:
+### Handle null
+#### data aggregation:
 - for every aggregate function: Nulls ignored
 - just count(*) doesn't ignored null
     
 But sometimes specially for avg we have to count null as zero
+    <br>
+
+#### mathematical operators:
+
 
 
 
