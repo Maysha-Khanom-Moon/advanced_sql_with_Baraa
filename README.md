@@ -664,7 +664,7 @@ CASE coulmn
             <br>
     <br>
 
-#### COALESCE
+#### COALESCE:
 - as it is like isnull function but we can use multiple values or columns to check
 1. static:
     - COALESCE(column1, replacement_value)
@@ -718,8 +718,18 @@ But sometimes specially for avg we have to count null as zero
     <br>
 
 #### mathematical operators:
+- handle the Null before doing mathematical operations
+- we know:
+    1. 1 + 5 = 6, 'A' + 'B' = 'AB'
+    2. 0 + 5 = 5,  '' + 'B' = 'B'
 
+    ##### but,
+    - Null + 5 = Null
+    - Null + 'B' = Null
+        - sql don't know + something = don't know
+    <br>
 
+#### 
 
 
 
