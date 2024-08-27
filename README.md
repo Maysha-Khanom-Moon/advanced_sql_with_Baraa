@@ -677,17 +677,19 @@ CASE coulmn
             <br>
 
 3. multiple:
-##### it's a nested isnull function
-- COALESCE(column1, column2, ..., value)
-- COALESCE(column1, column2, column3, ...)
-    - if column1 value is null then replace it with column2
-        - if column2 is also null then replace it with column3
-            - if column3 is also null then replace it with column4
-                - ...
-            - else replace by column3
-        - else replace by column2
-    - else replace by column1
-    <br>
+    ##### it's a nested isnull function
+    - COALESCE(column1, column2, ..., value)
+    - COALESCE(column1, column2, column3, ...)
+```
+        if column1 value is null then replace it with column2
+            if column2 is also null then replace it with column3
+                if column3 is also null then replace it with column4
+                    ... ...
+                else replace by column3
+            else replace by column2
+        else replace by column1
+```
+<br>
 
 #### 
 
