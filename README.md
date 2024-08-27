@@ -685,14 +685,28 @@ CASE coulmn
             if column2 is also null then replace it with column3
                 if column3 is also null then replace it with column4
                     ... ...
-                else replace by column3
-            else replace by column2
-        else replace by column1
+                else column3
+            else column2
+        else column1
 ```
 <br>
 
-#### 
+#### ISNULL vs COALESCE:
+1. 
+    - isnull: limited to two values
+    - coalesce: unlimited
+2. 
+    - isnull: fast
+    - coalesce: slow
+3. 
+    - isnull: different database server has different keyword for isnull
+        - sql server --> ISNULL
+        - oracle --> NVL
+        - mysql --> IFNULL
+    - coalesce: available in all databases
+        - so coalesce recommended
 
+- if coalesce query is really slow then just use isnull, otherwise coalesce recommended
 
 
 
