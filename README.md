@@ -732,6 +732,8 @@ CASE coulmn
 column IS NULL
 - returns true if the value is null,
   otherwise it returns false
+
+- use case: anti joins
     <br>
 
 #### IS NOT NULL:
@@ -804,3 +806,14 @@ ORDER BY c.country
 
 LIMIT 2
 ```
+
+### Advance join(extra):
+#### Left anti join:
+- left join + isnull
+- all rows from left table without matches in the right table
+    <br>
+
+#### right anti join:
+- right join + isnull
+- all rows from right table without matches in the left table
+    <br>
