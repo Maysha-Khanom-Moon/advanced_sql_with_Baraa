@@ -709,6 +709,25 @@ CASE coulmn
 - if coalesce query is really slow then just use isnull, otherwise coalesce recommended
     <br>
 
+#### NULLIF:
+- compares two expressions returns:
+    1. NULL, if they are equal
+    2. First Value, if they are not equal
+        <br>
+    
+    - NULLIF(column1, value)
+        - if column1.value = value --> NULL
+        - else column1.value
+        <br>
+    
+    - NULLIF(column1, column2)
+        - if column1.value = column2 --> NULL
+        - else column1.value
+        <br>
+
+- use case --> division by zero
+    <br>
+
 ### Handle null(use case)
 #### data aggregation:
 - for every aggregate function: Nulls ignored
@@ -752,6 +771,7 @@ But sometimes specially for avg we have to count null as zero
         - via case statement
     <br>
 
+#### 
 
 
 ## 🌟Query Clauses
