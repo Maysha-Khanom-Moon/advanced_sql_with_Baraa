@@ -728,6 +728,18 @@ CASE coulmn
 - use case --> division by zero
     <br>
 
+#### IS NULL:
+column IS NULL
+- returns true if the value is null,
+  otherwise it returns false
+    <br>
+
+#### IS NOT NULL:
+column IS NOT NULL
+- returns true if the value is not null,
+  otherwise it returns false
+    <br>
+
 ### Handle null(use case)
 #### data aggregation:
 - for every aggregate function: Nulls ignored
@@ -772,8 +784,6 @@ But sometimes specially for avg we have to count null as zero
     2. flag use:
         - via case statement
     <br>
-
-#### 
 
 
 ## 🌟Query Clauses
