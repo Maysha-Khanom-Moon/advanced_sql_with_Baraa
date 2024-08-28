@@ -743,7 +743,13 @@ But sometimes specially for avg we have to count null as zero
 
 - to put null at the last position in desc order:
     1. lazy way:
+        - via coalesce
         - replace the nulls with very big number
+        - it's a static way
+            <br>
+    
+    2. flag use:
+        - via case statement
     <br>
 
 

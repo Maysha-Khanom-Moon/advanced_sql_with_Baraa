@@ -9,6 +9,14 @@ SELECT
     CustomerID,
     Score,
     -- # 1. lazy way
-    COALESCE(Score, 999999) NullHandledScore
+--    COALESCE(Score, 999999) NullHandledScore,
+
+    -- # 2. boolean flag
+    CASE WHEN Score IS NULL THEN 1 ELSE 0 END Flag
 FROM Sales.Customers
-ORDER BY COALESCE(Score, 999999)
+-- 1.
+-- ORDER BY COALESCE(Score, 999999)
+
+-- 2.
+ORDER BY CASE WHEN Score IS NULL THEN 1 ELSE 0 END, Score
+-- first sort the data following Flag then sort again based on Score
