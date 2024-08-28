@@ -737,6 +737,15 @@ But sometimes specially for avg we have to count null as zero
     - that's why we have to handle NULLs
     <br>
 
+#### sorting data:
+- handle the null before sorting the data
+- is case of sorting, sql treats null as the smallest value
+
+- to put null at the last position in desc order:
+    1. lazy way:
+        - replace the nulls with very big number
+    <br>
+
 
 
 ## 🌟Query Clauses
