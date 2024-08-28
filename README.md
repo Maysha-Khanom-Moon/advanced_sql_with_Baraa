@@ -737,6 +737,8 @@ But sometimes specially for avg we have to count null as zero
     <br>
 
 #### mathematical operators:
+- no matter what arithmetic operation is done with a null, it's always null
+- null never affected by any mathematical operations
 - handle the Null before doing mathematical operations
 - we know:
     1. 1 + 5 = 6, 'A' + 'B' = 'AB'
