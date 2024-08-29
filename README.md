@@ -834,11 +834,11 @@ But sometimes specially for avg we have to count null as zero
 
 2. only use NULLs and avoid empty strings and blank spaces
     - it's easy to handle and understand
-    - replaceing empty strings and blanks with NULL during data preparation before <h2><b>inserting</b></h2> into a database to optimize storage and performance
+    - replaceing empty strings and blanks with NULL during data preparation before <b>inserting</b> into a database to optimize storage and performance
         <br>
 
 3. use the default value 'unknown' and avoid using nulls, empty strings, and blank spaces
-    - replacing empty strings, blanks, nulls with default value during data preparation before using it in <h2><b>reporting</b></h2> to improve readiblity and reduce confusion.
+    - replacing empty strings, blanks, nulls with default value during data preparation before using it in <b>reporting</b> to improve readiblity and reduce confusion.
     <br>
 
 #### summary:
