@@ -742,6 +742,18 @@ column IS NOT NULL
   otherwise it returns false
     <br>
 
+### Advance join(extra):
+#### Left anti join:
+- left join + isnull
+- all rows from left table without matches in the right table
+    <br>
+
+#### right anti join:
+- right join + isnull
+- all rows from right table without matches in the left table
+    <br>
+
+
 ### Handle null(use case)
 #### data aggregation:
 - for every aggregate function: Nulls ignored
@@ -806,14 +818,4 @@ ORDER BY c.country
 
 LIMIT 2
 ```
-
-### Advance join(extra):
-#### Left anti join:
-- left join + isnull
-- all rows from left table without matches in the right table
-    <br>
-
-#### right anti join:
-- right join + isnull
-- all rows from right table without matches in the left table
-    <br>
+<br>
