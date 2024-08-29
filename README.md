@@ -748,12 +748,6 @@ column IS NOT NULL
 - all rows from left table without matches in the right table
     <br>
 
-#### right anti join:
-- right join + isnull
-- all rows from right table without matches in the left table
-    <br>
-
-
 ### Handle null(use case)
 #### data aggregation:
 - for every aggregate function: Nulls ignored
@@ -845,7 +839,31 @@ But sometimes specially for avg we have to count null as zero
 
 3. use the default value 'unknown' and avoid using nulls, empty strings, and blank spaces
     - replacing empty strings, blanks, nulls with default value during data preparation before using it in <h2><b>reporting</b></h2> to improve readiblity and reduce confusion.
+    <br>
 
+#### summary:
+- nulls special markers means missing value
+- using nulls can optimize storage and performance
+    <br>
+- functions:
+    - NULL --- coalesce | isnull --> value
+    - value --- nullif --> null
+    - is null | is not null -----> true | false
+        <br>
+- use cases:
+    - handle nulls:
+        1. data aggregation
+        2. mathematical operations
+        3. joining tables
+        4. sorting data
+            <br>
+    - finding unmatched data - left anti join
+        <br>
+- data policies: nulls | default value
+    <br>
+<br>
+
+## 6️⃣
 
 
 
