@@ -6,7 +6,10 @@ WITH Orders AS (
 )
 
 SELECT *,
-	DATALENGTH (Category) CategoryLen
+	DATALENGTH (Category) CategoryLen,
+	TRIM(Category) Policy1,
+	NULLIF(TRIM(Category), '') Policy2,
+    COALESCE(NULLIF(TRIM(Category), ''), 'unkown') Policy3
 FROM Orders
 
 /*

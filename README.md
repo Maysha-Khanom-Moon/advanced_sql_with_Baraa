@@ -799,6 +799,55 @@ But sometimes specially for avg we have to count null as zero
         - via case statement
     <br>
 
+### Null vs Empty string vs Blank space
+- empty string and blank space are looking similar, but length is different
+
+#### null vs empty string vs blank space:
+1. representation:
+    - null: NULL
+    - empty string: ''
+    - blank space: ' '
+2. meaning:
+    - null: unknown
+    - empty string: known, empty value
+    - blank space: known, space value
+3. data type:
+    - null: Special Marker
+    - empty string: String(0)
+    - blank space: String(1 or more)
+4. storage:
+    - null: very minimal
+    - empty string: occupies memory
+    - blank space: occupies memory(each space)
+5. performance:
+    - null: best
+    - empty string: fast
+    - blank space: slow
+6. comparison:
+    - null: IS NULL
+    - empty string: = ''
+    - blank space: = ' '
+    <br>
+
+#### data policy:
+- set of rules that defines how data should be handled
+
+1. Only use NULLs and empty strings, but avoid blank spaces
+    ##### trim:
+    - remove unwanted leading and trailing spaces from a string
+    - but still it's hard to understand that is a empty string or blank spaces
+        <br>
+
+2. only use NULLs and avoid empty strings and blank spaces
+    - it's easy to handle and understand
+    - replaceing empty strings and blanks with NULL during data preparation before <h2><b>inserting</b></h2> into a database to optimize storage and performance
+        <br>
+
+3. use the default value 'unknown' and avoid using nulls, empty strings, and blank spaces
+    - replacing empty strings, blanks, nulls with default value during data preparation before using it in <h2><b>reporting</b></h2> to improve readiblity and reduce confusion.
+
+
+
 
 ## 🌟Query Clauses
 ```
