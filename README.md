@@ -931,10 +931,10 @@ There is 4 parts:
     <br>
 
 #### datetrunc(part, date):
-- truncates the date to the specific part
+- truncates the datetime to the specific part
 - part: level of details
 
-Date Time: Year-Month-Day Hours-Minutes-Seconds
+DateTime: Year-Month-Day Hours-Minutes-Seconds
 
 - part: year | month | day | hour | minute | second
     - until part we keep, rest of the things are reset
@@ -953,10 +953,21 @@ Date Time: Year-Month-Day Hours-Minutes-Seconds
     1. by year
     2. by month
     3. by day
+        <br>
+
+- data filtering
+    - <b>**</b> filtering data using integer is faster than using a string
+    - avoid using datename for filtering data, instead of datepart
+        <br>
+
+#### summary:
+1. day, month, year, datepart --> int
+2. datename --> string
+3. datetrunc --> datetime
+4. eomonth --> date
     <br>
 
-
-
+### 
 
 
 ## 🌟Query Clauses
