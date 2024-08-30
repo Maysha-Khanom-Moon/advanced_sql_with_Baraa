@@ -742,7 +742,6 @@ column IS NOT NULL
   otherwise it returns false
     <br>
 
-### Advance join(extra):
 #### Left anti join:
 - left join + isnull
 - all rows from left table without matches in the right table
@@ -884,6 +883,7 @@ There is 4 parts:
     - isdate
     <br>
 
+### Basics
 #### Date:
 - 3 components:
     1. year: no limit
@@ -907,6 +907,19 @@ There is 4 parts:
 2. hardcoded constant string value
 3. getdate() function:
     - returns the current date and time at the moment when the query is executed
+        <br>
+
+### Part Extraction
+#### day(date):
+- returns the day from a date
+
+#### month(date):
+- returns the month from a date
+
+#### year(date):
+- returns the year from a date
+
+
 
 
 ## 🌟Query Clauses
