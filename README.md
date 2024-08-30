@@ -923,6 +923,10 @@ There is 4 parts:
 - returns specific part of a date as a number
 - part: year | month | day | hour | quater | week
 
+#### datename(part, date):
+- returns the name of a specific part of a date
+- part: month | weekday || (year, day, hour, quater, week)
+- without month and weekday, others are return number. but it's not a integer, it's a strig
 
 
 
