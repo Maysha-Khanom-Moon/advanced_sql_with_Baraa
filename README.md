@@ -918,6 +918,7 @@ There is 4 parts:
 
 #### year(date):
 - returns the year from a date
+    <br>
 
 #### datepart(part, date):
 - returns specific part of a date as a number
@@ -926,7 +927,22 @@ There is 4 parts:
 #### datename(part, date):
 - returns the name of a specific part of a date
 - part: month | weekday || (year, day, hour, quater, week)
-- without month and weekday, others are return number. but it's not a integer, it's a strig
+- without month and weekday, others are return number. but it's not a integer, it's a string
+    <br>
+
+#### datetrunc(part, date):
+- truncates the date to the specific part
+- part: level of details
+
+Date Time: Year-Month-Day Hours-Minutes-Seconds
+
+- part: year | month | day | hour | minute | second
+    - until part we keep, rest of the things are reset
+        - date part reset: 01
+        - time part reset: 00
+    <br>
+
+
 
 
 
