@@ -863,7 +863,26 @@ But sometimes specially for avg we have to count null as zero
     <br>
 <br>
 
-## 6️⃣
+## 6️⃣Date & Time Functions
+There is 4 parts:
+1. part extraction:
+    - day
+    - month
+    - year
+    - datepart
+    - datename
+    - datetrunc
+    - eomonth
+2. format & casting:
+    - format
+    - convert
+    - cast
+3. calculations:
+    - dateadd
+    - datediff
+4. validation:
+    - isdate
+    <br>
 
 
 
