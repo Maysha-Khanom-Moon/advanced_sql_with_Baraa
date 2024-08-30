@@ -946,6 +946,15 @@ Date Time: Year-Month-Day Hours-Minutes-Seconds
 - returns the last day of a month
 - fun part:
     - datetrunc(month, date) returns the first day of a month
+    <br>
+
+#### use case:
+- data aggregation using datetrunc
+    1. by year
+    2. by month
+    3. by day
+    <br>
+
 
 
 
