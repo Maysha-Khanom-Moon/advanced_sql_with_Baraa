@@ -919,6 +919,10 @@ There is 4 parts:
 #### year(date):
 - returns the year from a date
 
+#### datepart(part, date):
+- returns specific part of a date as a number
+- part: year | month | day | hour | quater | week
+
 
 
 
