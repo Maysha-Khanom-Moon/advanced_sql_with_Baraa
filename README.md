@@ -942,6 +942,10 @@ Date Time: Year-Month-Day Hours-Minutes-Seconds
         - time part reset: 00
     <br>
 
+#### eomonth(date):
+- returns the last day of a month
+- fun part:
+    - datetrunc(month, date) returns the first day of a month
 
 
 

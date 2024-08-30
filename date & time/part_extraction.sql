@@ -42,4 +42,12 @@ SELECT
     DATETRUNC(day, CreationTime) Day_dt,
     DATETRUNC(hour, CreationTime) Hour_dt,
     DATETRUNC(minute, CreationTime) Minute_dt
-FROM Sales.Orders
+FROM Sales.Orders;
+
+-- eomonth --> last day of the month
+SELECT
+    OrderID,
+    CreationTime,
+    EOMONTH(CreationTime) EndOfMonth,
+    CAST(DATETRUNC(month, CreationTime) AS DATE) StartOfMonth
+FROM Sales.Orders;
