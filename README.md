@@ -884,6 +884,29 @@ There is 4 parts:
     - isdate
     <br>
 
+#### Date:
+- 3 components:
+    1. year: no limit
+    2. month: 1-12
+    3. day: 1-31
+
+#### Time:
+- 3 components:
+    1. hours: 0-23
+    2. minutes: 0-59
+    3. seconds: 0-59
+
+#### Time + Date combination:
+- Timestamp: oracle, postgres, mysql
+- Datetime2: sql server
+    - another one is datetime, but datetime2 has more precision
+        <br>
+
+#### Date & time values:
+1. date column from a table
+2. hardcoded constant string value
+3. getdate() function:
+    - returns the current date and time at the moment when the query is executed
 
 
 ## 🌟Query Clauses
