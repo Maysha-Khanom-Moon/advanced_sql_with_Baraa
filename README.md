@@ -1019,7 +1019,10 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
     - default style = 0
         <br>
 
-#### 
+#### cast(value as data_type):
+- converts a value to a specified data type
+    <br>
+
 
 
 ## 🌟Query Clauses
