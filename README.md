@@ -906,7 +906,7 @@ There is 4 parts:
 1. date column from a table
 2. hardcoded constant string value
 3. getdate() function:
-    - returns the current date and time at the moment when the query is executed
+    - returns the current datetime at the moment when the query is executed
         <br>
 
 ### Part Extraction
@@ -967,7 +967,22 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
 4. eomonth --> date
     <br>
 
-### 
+### Format & casting
+#### format specifier:
+- datetime: yyyy-MM-dd HH:mm:ss
+    <br>
+
+- date format standards:
+    1. international standard(Iso 8601): yyyy-MM-dd
+        - sql server standard
+            <br>
+
+    2. usa standard: MM-dd-yyyy
+    3. european standard: dd-MM-yyyy
+    <br>
+
+#### 
+
 
 
 ## 🌟Query Clauses
