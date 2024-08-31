@@ -989,7 +989,7 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
 
 - number:
     1. format: N, C, P
-        <b>
+        <br>
 
 - casting:
     - changing the data type from one to another
@@ -1056,7 +1056,18 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
 <br>
 
 
-#
+# SQL Techniques
+To reduce & optimize the complexity of sql queries
+    <br>
+
+The 5 techniques are:
+1. SUBQUERY
+2. CTE
+3. VIEW
+4. TMP
+5. CTAs
+    <br>
+
 
 
 
