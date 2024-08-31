@@ -1005,6 +1005,11 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
 
 - <b>formatting use cases</b>:
     1. data aggregations
+    2. data standardization
+        - the process of converting data from various sources into a common format so that it can be easily processed and analyzed
+        <br>
+
+#### convert():
 
 
 
