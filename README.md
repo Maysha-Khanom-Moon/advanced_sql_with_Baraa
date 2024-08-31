@@ -1009,8 +1009,17 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
         - the process of converting data from various sources into a common format so that it can be easily processed and analyzed
         <br>
 
-#### convert():
+#### convert(data_type, value [, style]):
+- casting + formating
+- converts a date or time value to a different data type & formats the value
+    <br>
 
+- style:
+    - an output style (optional)
+    - default style = 0
+        <br>
+
+#### 
 
 
 ## 🌟Query Clauses
