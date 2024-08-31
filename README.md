@@ -1001,6 +1001,11 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
 - culture: specifies the local-aware formatting
     - an optional parameter
     - default culture: en-US
+        <br>
+
+- <b>use cases</b>:
+    1. data aggregations:
+        
 
 
 ## 🌟Query Clauses
