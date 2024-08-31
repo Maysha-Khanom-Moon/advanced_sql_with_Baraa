@@ -1043,7 +1043,19 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
 #### datediff(part, start_date, end_date):
 - find the difference between two dates
 - part: year, month, day
+    <br>
 
+#### isdate(value):
+- check if a value is a date
+    - returns 1 if string value is a valid date
+    - otherwise 0
+        <br>
+
+- <b>if string value is not a valid date then it's not possible to casting as date</b>
+    <br>
+<br>
+
+#
 
 
 
