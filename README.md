@@ -1003,9 +1003,9 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
     - default culture: en-US
         <br>
 
-- <b>use cases</b>:
-    1. data aggregations:
-        
+- <b>formatting use cases</b>:
+    1. data aggregations
+
 
 
 ## 🌟Query Clauses
