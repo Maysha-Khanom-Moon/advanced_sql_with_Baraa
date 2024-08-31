@@ -1023,6 +1023,20 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
 - converts a value to a specified data type
     <br>
 
+#### cast vs convert vs format:
+1. casting:
+    - cast: anytype to anytype
+    - convert: anytype to anytype
+    - format: anytype to <b>only string</b>
+
+2. formating:
+    - cast: no formating
+    - convert: formating only data & time
+    - format: date & time | numbers
+    <br>
+
+###
+
 
 
 ## 🌟Query Clauses
