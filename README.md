@@ -981,8 +981,26 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
     3. european standard: dd-MM-yyyy
     <br>
 
-#### 
+#### formatting & casting:
+- date:
+    1. format: MM/dd/yy | MMM yyyy
+    2. convert: style no
+        <br>
 
+- number:
+    1. format: N, C, P
+        <b>
+
+- casting:
+    - changing the data type from one to another
+    1. cast()
+    2. convert()
+        <br>
+
+#### fomart(value, format [, culture]):
+- culture: specifies the local-aware formatting
+    - an optional parameter
+    - default culture: en-US
 
 
 ## 🌟Query Clauses
