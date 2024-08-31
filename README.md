@@ -1035,7 +1035,10 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
     - format: date & time | numbers
     <br>
 
-###
+### Calculations & Validation
+#### dateadd(part, interval, date):
+- adds or subtracts a specific time interval to/from a date
+
 
 
 
