@@ -92,14 +92,14 @@
 - row-level calculation
 
 #### windows functions:
-- ##### aggregate:
+-  <b>aggregate</b>:
     - count(expr)
     - sum(expr)
     - avg(expr)
     - min(expr)
     - max(expr)
     <br>
-- ##### ranking:
+- <b>ranking</b>:
     - row_number()
     - rank()
     - dense_rank()
@@ -107,7 +107,7 @@
     - percent_rank()
     - ntile(n)
     <br>
-- ##### value(analytical):
+- <b>value(analytical)</b>:
     - lead(expr, offset, default)
     - lag(expr, offset, default)
     - first_value(expr)
@@ -1038,6 +1038,11 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
 ### Calculations & Validation
 #### dateadd(part, interval, date):
 - adds or subtracts a specific time interval to/from a date
+- part: year, month, day
+
+#### datediff(part, start_date, end_date):
+- find the difference between two dates
+- part: year, month, day
 
 
 
