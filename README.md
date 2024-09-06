@@ -1058,7 +1058,7 @@ DateTime: Year-Month-Day Hours-Minutes-Seconds
 
 # SQL Techniques
 To reduce & optimize the complexity of sql queries
-    <br>
+            <br>
 
 The 5 techniques are:
 1. SUBQUERY
@@ -1068,6 +1068,59 @@ The 5 techniques are:
 5. CTAs
     <br>
 
+#### real-world scenarios:
+1. DBA: database administration
+    - does database architechture
+
+2. data engineer
+    - ETL(extract, transform, load) --> DWH --> analyst | sceintist
+    - dwh: data warehouse
+
+3. Analyst
+    - get data by query --> analysis --> report
+
+4. data scientist
+    - get data by query --> model
+    <br>
+
+##### challenges
+- redundancy
+- performance issues
+- complexity
+- hard to maintain
+- DB stress
+- security
+
+##### solutions
+1. SUBQUERY
+2. CTE
+3. VIEW
+4. TMP
+5. CTAs
+    <br>
+
+#### database architechture:
+There are 2 sides:
+1. server
+    - database engine
+        - it is the brain of the database, executing multiple operations such as storing, retrieving, and managing data within the database
+    
+    - storage
+        1. disk storage: long-term memory, where data is stored permanently
+            - capacity: can hold a large amount of data
+            - speed: slow to read and write
+                    <br>
+
+        2. cache storage: fast short-term memory, where data is stored temporarily
+            - capacity: can hold smaller amount of data
+            - speed: extremely fast to read and write
+        <br>
+
+2. client
+    - user | queries
+    <br>
+
+#### 
 
 
 
