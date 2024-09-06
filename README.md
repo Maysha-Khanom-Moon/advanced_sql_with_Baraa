@@ -1180,11 +1180,20 @@ Based on result types:
 1. scaler subquery
     - returns single value | one row with one column
 
-2. row subquery
+2. single row subquery
     - retruns single row, which can contain multiple column values
 
-3. table subquery
-    - returns multiple rows as well as multiple columns
+3. multi-rows subquery
+    - row subquery
+    - returns multiple rows but usually only one column
+
+4. multi-columns subquery
+    - returns multiple rows and multiple columns
+    - placed in WHERE or HAVING clause
+
+5. table subquery
+    - returns multiple rows and multiple columns
+    - placed in FROM clause
         <br>
 
 Based on Location | Caluses:
@@ -1196,7 +1205,8 @@ Based on Location | Caluses:
     - logical operators: IN, ANY, ALL, EXSITS
     <br>
 
-###
+### 
+
 
 
 
