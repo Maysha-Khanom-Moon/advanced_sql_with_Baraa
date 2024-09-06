@@ -1205,8 +1205,18 @@ Based on Location | Caluses:
     - logical operators: IN, ANY, ALL, EXSITS
     <br>
 
-### 
+### Based on Location | Caluses
+#### From clause:
+- used as temporary table for the main query
+- we need subquery because window function only can use in SELECT or ORDER BY clauses
 
+```
+SELECT 
+    column1,
+    column2,
+    ...
+FROM ( subquery ) AS alias
+```
 
 
 
