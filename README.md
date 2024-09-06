@@ -1154,7 +1154,49 @@ There are 2 sides:
 ```
 <br>
 
-## 
+## 7️⃣Subquery
+A query inside another query
+
+```
+Nested queries:
+
+Outer(main) query{
+    Inner(sub) query {
+        ... ...
+    }
+}
+```
+
+#### Categories of subquery
+Following dependancy:
+1. Non-correlated subquery
+    - inner query does not depend on the outer query
+
+2. Correlated subquery
+    - inner query depends on the outer query
+        <br>
+
+Based on result types:
+1. scaler subquery
+    - returns single value | one row with one column
+
+2. row subquery
+    - retruns single row, which can contain multiple column values
+
+3. table subquery
+    - returns multiple rows as well as multiple columns
+        <br>
+
+Based on Location | Caluses:
+1. select clause
+2. from
+3. jon
+4. where
+    - comparison operators: <, >, =, !=, >=, <=
+    - logical operators: IN, ANY, ALL, EXSITS
+    <br>
+
+###
 
 
 
