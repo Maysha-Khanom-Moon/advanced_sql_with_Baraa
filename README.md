@@ -1120,7 +1120,41 @@ There are 2 sides:
     - user | queries
     <br>
 
-#### 
+#### 3 types of area are there in a disk storage:
+1. user data storage
+    - it's the main content of the database. this is where the actual data that users care about is stored
+                <br>
+2. system catalog
+    - database's internal storage for its own information. a blueprint that keeps track of everything about the database itself, not the user data
+    - it holds the Metadata information about the database
+        - Metadata: data about data
+            - you can find this in information schema 
+                <br>
+
+    - information schema: a system-defined schema with built-in views that provide info about the database, like tables and columns
+```
+    SELECT 
+        *
+    FROM INFORMATION_SCHEMA.___
+```
+
+3. temporary data storage
+    - temporary space used by the database for short-term tasks, like processing queries or sorting data
+    - system databases --> tempdb
+        - although to access this, need authorization
+    <br>
+
+##### how simple query works?
+``` client(query) --> 1st check cache memory:
+        if exist in cache memory
+            return data from cache memory
+
+        else
+            check in user data storage
+```
+<br>
+
+## 
 
 
 
