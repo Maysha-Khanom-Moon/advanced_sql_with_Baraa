@@ -1114,6 +1114,8 @@ There are 2 sides:
         2. cache storage: fast short-term memory, where data is stored temporarily
             - capacity: can hold smaller amount of data
             - speed: extremely fast to read and write
+                            <br>
+        - subquery results stay in cache memory
         <br>
 
 2. client
@@ -1217,6 +1219,10 @@ SELECT
     ...
 FROM ( subquery ) AS alias
 ```
+
+#### Select clause:
+
+
 
 
 
